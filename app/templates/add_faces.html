@@ -62,11 +62,25 @@
         input[type="submit"]:hover {
             background-color: #0056b3;
         }
+        .home-link {
+    display: inline-block;
+    background-color: #f7f7f8;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            
+    }
     </style>
 </head>
 <body>
     <div class="header">
         <h1>Smart Attendance System</h1>
+        <div style="padding-left: 10px;">
+        <a href="/" class="home-link"><button>Home</button></a>
+    </div>
     </div>
     <h2>Add Your Details And Face</h2>
     <form method="POST" action="/add_faces">

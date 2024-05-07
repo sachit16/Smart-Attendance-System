@@ -59,7 +59,7 @@ def add_faces(name,rollno):
                 faces_data.append(resized_img)
 
             i = i + 1
-
+            cv2.putText(frame, str(len(faces_data)), (50, 50), cv2.FONT_HERSHEY_COMPLEX, 1, (50, 50, 255), 1)
             # Draw a rectangle around the detected face
             cv2.rectangle(frame, (x, y), (x + w, y + h), (50, 50, 255), 1)
 
@@ -70,6 +70,7 @@ def add_faces(name,rollno):
         k = cv2.waitKey(1)
         if k == ord('q') or len(faces_data) == 5:
             break
+        time.sleep(0.2)
 
     # Release the video capture object and close all windows
     video.release()
@@ -239,7 +240,7 @@ def record_attendance():
         # If 'q' is pressed, exit the loop
         if k == ord('q'):
             break
-        time.sleep(2)
+       
 
     # Release the video capture object and close all windows
     video.release()
