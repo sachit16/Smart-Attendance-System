@@ -12,6 +12,12 @@ This is a simple attendance system using face recognition built using Python, Fl
 - **Record Attendance**: Recognize faces in real-time and record attendance with just one key press.
 - **View Attendance Records**: View attendance records for the current date.
 
+[![Watch the video](https://img.youtube.com/vi/<VIDEO_ID>/hqdefault.jpg)](https://www.youtube.com/embed/<VIDEO_ID>)
+
+[<img src="https://img.youtube.com/vi/<VIDEO_ID>/hqdefault.jpg" width="600" height="300"
+/>](https://www.youtube.com/embed/<VIDEO_ID>)
+
+
 ## Installation
 
 1. Clone the repository:
